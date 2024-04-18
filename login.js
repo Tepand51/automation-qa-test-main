@@ -8,7 +8,7 @@ $(document).ready(function() {
         // Simple validation
         if (username.trim() === '' || password.trim() === '') {
             $('#loginMessage').text('Please enter both username and password.');
-        } else if (username === 'admin' && password === '123456') {
+        } else if (username === '' && password === '123456') {
             $('#loginMessage').text('Login successful!');
         } else {
             $('#loginMessage').text('Invalid username or password.');
